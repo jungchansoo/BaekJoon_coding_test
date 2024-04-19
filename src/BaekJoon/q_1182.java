@@ -1,10 +1,10 @@
-package coding_test;
+package BaekJoon;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class BaekJoon_1182 {
+public class q_1182 {
 	static int[] arr;
     static int N, S, count = 0;
 
