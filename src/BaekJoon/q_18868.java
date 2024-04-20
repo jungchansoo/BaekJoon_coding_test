@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class q_11868 {
+public class q_18868 {
 	static int[][] arr;
 	 static int M, N, count = 0;
 

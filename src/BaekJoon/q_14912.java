@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main {
+public class q_14912 {
 	 static int n, d, count = 0;
 
 	 public static void main(String[] args) throws IOException {
@@ -23,10 +23,8 @@ public class Main {
             	}
         		num /= 10;
         	}
-        	
         }
         
         System.out.println(count);
 	 }
-
 }
