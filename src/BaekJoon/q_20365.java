@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main {
+public class q_20365 {
 	 static int n,b=0,r=0;
 	 static char color, pre;
 	 static String problem;
