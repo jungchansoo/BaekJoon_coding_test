@@ -5,30 +5,30 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Main {
-	 static int n,b=0,r=0;
-	 static char color, pre;
-	 static String problem;
-	 
-	 public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        n = Integer.parseInt(br.readLine());
-        problem = br.readLine();
-        
-        for(int i=0; i<n; i++) {
-        	color = problem.charAt(i);
-        	if(color == 'B' && pre != 'B') {
-        		b++;
-        	}else if(color == 'R' && pre != 'R'){
-        		r++;
-        	}
-        	pre = color;
-        }
-        
-        if(b >= r) {
-        	System.out.println(1+r);
-        }else {
-        	System.out.println(1+b);
-        }
-        
-	 }
+	public static void main(String argc[]) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int t = Integer.parseInt(br.readLine());
+		String ps;
+		int opencount;
+		
+		for(int i=0; i<t; i++) {
+			ps = br.readLine();
+			opencount =0;
+			for(int j=0; j<ps.length(); j++) {
+				if(ps.charAt(j) == '(')
+					opencount++;
+				else
+					opencount--;
+				
+				
+				if(opencount < 0) 
+					break;
+				
+			}
+			if(opencount != 0) 
+				System.out.println("NO");
+			else
+				System.out.println("YES");
+		}
+	}
 }
