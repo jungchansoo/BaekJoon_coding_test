@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.StringTokenizer;
 
-public class Main {
+public class q_2121 {
     static class Point {
         int x, y;
 
@@ -34,7 +34,6 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        Point a =new Point(1, 2);
         
         //점 개수 입력
         int N = Integer.parseInt(st.nextToken());
